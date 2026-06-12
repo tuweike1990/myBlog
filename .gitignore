@@ -3,3 +3,5 @@ node_modules/
 uploads/
 client/dist/
 .env
+
+server/packageCopy.json

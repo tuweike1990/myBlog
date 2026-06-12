@@ -4,11 +4,11 @@
   "description": "中文个人博客网站",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "node server/index.js",
+    "dev": "npm run dev:server",
+    "dev:server": "node index.js",
     "dev:client": "npm run dev",
     "build": "npm run build",
-    "start": "node server/index.js"
+    "start": "node index.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
