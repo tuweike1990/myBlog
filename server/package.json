@@ -7,7 +7,7 @@
     "dev": "npm run dev:server",
     "dev:server": "node index.js",
     "dev:client": "npm run dev",
-    "build": "npm run build",
+    "build": "node index.js",
     "start": "node index.js"
   },
   "devDependencies": {
