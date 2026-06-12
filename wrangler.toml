@@ -10,7 +10,7 @@ node_compat = true  # 启用 Node.js 兼容模式（可选，但推荐）
 # 强制安装 client 依赖
 [build.env]
 NODE_VERSION = "22"
-install = "cd client && npm ci"  # 用 npm ci 更稳定，避免 lock 文件不一致
+install = "cd client && npm ci && cd .."  
 
 [deploy]
 command = "npx wrangler deploy"
