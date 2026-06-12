@@ -2,8 +2,15 @@ name = "myblog"
 main = "server/index.js"
 compatibility_date = "2024-01-01"
 
+# 关键：在 build 之前，先安装 client 依赖
 [build]
 command = "npm run build"
+# 明确指定 Node 版本（和你本地一致，比如 22）
+node_compat = true  # 启用 Node.js 兼容模式（可选，但推荐）
+# 强制安装 client 依赖
+[build.env]
+NODE_VERSION = "22"
+install = "cd client && npm ci"  # 用 npm ci 更稳定，避免 lock 文件不一致
 
 [deploy]
 command = "npx wrangler deploy"
