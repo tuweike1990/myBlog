@@ -11,7 +11,8 @@
     "start": "node server/index.js"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "vite": "^8.0.12"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
