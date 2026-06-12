@@ -1,0 +1,9 @@
+name = "my-blog-server"
+main = "index.js"  
+compatibility_date = "2026-06-11"
+
+[build]
+command = "npm run build"
+
+[env.production]
+vars = { NODE_ENV = "production" }
