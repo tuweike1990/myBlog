@@ -2,3 +2,6 @@ name = "myblog"
 main = "server/index.js"       # 根据你的实际入口文件调整
 compatibility_date = "2026-06-13"
 compatibility_flags = ["nodejs_compat"]
+
+pages_build_output_dir = "client/dist"  # 根据你 client 构建输出目录调整
+
