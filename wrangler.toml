@@ -1,1 +1,4 @@
+
 name = "myblog"
+main = "server/index.js"          # 根据实际入口文件修改
+compatibility_date = "2026-06-13"
